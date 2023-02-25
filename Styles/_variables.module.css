@@ -1,0 +1,99 @@
+/* https://www.happyhues.co/palettes/4 => dark */
+:root {
+  --dark-primary-100: #00adb5;
+  --dark-primary-200: #1d1f2c;
+  --dark-primary-300: #00adb5;
+  --dark-primary-400: #fdf6fd;
+  --dark-primary-500: #aae3e2;
+
+  --dark-accent-100: #ac7dd2;
+  --dark-accent-200: #fff4ff;
+  --dark-accent-300: #f2f5f7;
+
+  --dark-text-100: #eeeeee;
+  --dark-text-200: #aeacac;
+  --dark-text-300: #c5c5c5;
+
+  --dark-bg-100: #1d1f29;
+  /* --dark-bg-100: #222831; */
+  --dark-bg-200: #121212;
+  --dark-bg-300: #454e59;
+  --dark-bg-400: #344142;
+  --dark-bg-500: #040102;
+  --dark-bg-600: #1a1f21;
+
+  --dark-invert-color: 255, 255, 255;
+  --nav-bar-bg: #1d1f2cd9;
+}
+/* https://www.happyhues.co/palettes/3 => light */
+:root {
+  --light-primary-100: #86efac;
+  --light-primary-200: #f0fdf5;
+  --light-primary-300: #19725d;
+  --light-accent-100: #f5be0b;
+  --light-accent-200: #fef1c7;
+  --light-text-100: #292524;
+  --light-text-200: #78716c;
+  --light-bg-100: #fafaf9;
+  --light-bg-200: #f5f5f4;
+  --light-bg-300: #e0e2e5;
+  --light-invert-color: 0, 0, 0;
+}
+
+[data-theme="light"] {
+  --primary-100: var(--light-primary-100);
+  --primary-200: var(--light-primary-200);
+  --primary-300: var(--light-primary-300);
+  --accent-100: var(--light-accent-100);
+  --accent-200: var(--light-accent-200);
+  --text-100: var(--light-text-100);
+  --text-200: var(--light-text-200);
+  --bg-100: var(--light-bg-100);
+  --bg-200: var(--light-bg-200);
+  --bg-300: var(--light-bg-300);
+  --bg-400: var(--light-bg-400);
+  --bg-500: var(--light-bg-500);
+  --bg-600: var(--light-bg-600);
+  --light-img-invert: 100%;
+  --dark-img-invert: 0%;
+  --invert-color: var(--light-invert-color);
+}
+
+/* @media (prefers-color-scheme: dark) { */
+[data-theme="dark"] {
+  --primary-100: var(--dark-primary-100);
+  --primary-200: var(--dark-primary-200);
+  --primary-300: var(--dark-primary-300);
+  --primary-400: var(--dark-primary-400);
+  --primary-500: var(--dark-primary-500);
+  --accent-100: var(--dark-accent-100);
+  --accent-200: var(--dark-accent-200);
+  --text-100: var(--dark-text-100);
+  --text-200: var(--dark-text-200);
+  --bg-100: var(--dark-bg-100);
+  --bg-200: var(--dark-bg-200);
+  --bg-300: var(--dark-bg-300);
+  --bg-400: var(--dark-bg-400);
+  --bg-500: var(--dark-bg-500);
+  --bg-600: var(--dark-bg-600);
+  --light-img-invert: 0%;
+  --dark-img-invert: 100%;
+  --invert-color: var(--dark-invert-color);
+}
+
+/* :root {
+    --nav-bar-bg: rgba(29, 31, 44, 85%);
+    --text-primary: rgba(135, 200, 202, 1);
+    --seconadry: rgba(200, 200, 200, 1);
+    --x: rgba(216, 195, 163, 1);
+    --y: rgba(191, 140, 140, 1);
+    --disabled: rgba(63, 63, 63, 1);
+    --nav-bar-bg: rgba(29, 31, 44, 85%);
+    --nav-bar-text: #f7f6f4;
+  
+    --text-primary: rgba(135, 200, 202, 1);
+    --seconadry: rgba(200, 200, 200, 1);
+    --x: rgba(216, 195, 163, 1);
+    --y: rgba(191, 140, 140, 1);
+    --disabled: rgba(63, 63, 63, 1);
+  } */
