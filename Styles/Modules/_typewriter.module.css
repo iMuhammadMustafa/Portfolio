@@ -1,0 +1,39 @@
+.typeWriter-container {
+  position: relative;
+  letter-spacing: 0.15em;
+}
+
+.typewriter-list {
+  display: none;
+}
+.typewriter-static {
+  white-space: pre;
+}
+/* .typewriter-main {
+  content: " ";
+  position: absolute;
+  white-space: pre;
+  animation: blinkCaret 500ms steps(50, end) infinite both;
+} */
+
+.typewriter-main::after {
+  content: " ";
+  /* content: "|"; */
+  position: absolute;
+  white-space: pre;
+  /* font-size: 1.5em; */
+  /* color: var(--primary-100); */
+  animation: blinkCaret 700ms steps(50, end) infinite both;
+}
+
+@keyframes blinkCaret {
+  from,
+  to {
+    border-color: transparent;
+    /* opacity: 0; */
+  }
+  50% {
+    /* opacity: 1; */
+    border-right: 0.15em solid var(--primary-100);
+  }
+}
