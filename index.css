@@ -3,3 +3,7 @@
 @import url(./Styles/_defaults.css);
 @import url(./Styles/_globals.css);
 @import url(./Styles/Modules/_navbar.module.css);
+@import url(./Styles/Modules/_sections.module.css);
+@import url(./Styles/Modules/_intro.module.css);
+@import url(./Styles/Modules/_typewriter.module.css);
+@import url(./Styles/Modules/_starsCanvas.module.css);
