@@ -1,0 +1,27 @@
+/*
+--xs: 0;
+--sm: 576px;          => 36em
+--md: 768px;          => 48em
+--lg: 992px;          => 62em
+--xl: 1200px;         => 75em
+--xxl: 1400px;        => 87.5em
+*/
+html {
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bg-100);
+  color: var(--text-100);
+}
+
+/* section { */
+/* padding-top: 65px; */
+/* min-height: 100vh; */
+
+/* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+/* flex-wrap: nowrap; */
+/* } */
