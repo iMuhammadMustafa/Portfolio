@@ -1,0 +1,4 @@
+.stars-canvas {
+  position: absolute;
+  background-color: var(--bg-200);
+}
