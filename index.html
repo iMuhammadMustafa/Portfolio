@@ -8,7 +8,42 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="navbar"></header>
+    <header class="navbar">
+      <figure class="nav-brand">
+        <img src="./Assets/logo-removebg-preview.svg" alt="logo" />
+      </figure>
+
+      <div class="menu-toggler" data-toggler-target="navbar">
+        <span class="menu-toggler-bar" aria-hidden="true"></span>
+        <span class="menu-toggler-bar" aria-hidden="true"></span>
+        <span class="menu-toggler-bar" aria-hidden="true"></span>
+      </div>
+
+      <nav class="navbar-nav">
+        <ul class="nav-items nav-start">
+          <li class="nav-item">
+            <a>Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hero">About</a>
+          </li>
+          <li class="nav-item">
+            <a>Contact</a>
+          </li>
+        </ul>
+        <ul class="nav-items nav-end">
+          <li class="nav-item">
+            <a>User</a>
+          </li>
+          <li class="nav-item">
+            <a>Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <button aria-label="Toggle Theme" type="button" class="icon-container darkimg-invert toggler-button" onclick="toggleThemes()">
+        <img id="toggler-icon" src="./Assets/sun-icon.svg" alt="Toggle Theme" />
+      </button>
+    </header>
 
     <main>
       <section class="intro"></section>
@@ -22,5 +57,6 @@
     <footer></footer>
 
     <script src="./index.js"></script>
+    <script src="./Javascript/_navbar.module.js"></script>
   </body>
 </html>
