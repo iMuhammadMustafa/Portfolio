@@ -1,1 +1,2 @@
-@import url(./Styles/_variables.module.css);
+@import url(./Styles/_reset.css);
+@import url(./Styles/_variables.css);
