@@ -1,0 +1,36 @@
+.hero {
+  position: relative;
+  background-image: linear-gradient(to bottom, var(--bg-100), var(--bg-200));
+  height: 100vh;
+  /* padding-top: 5vh; */
+}
+.hero-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.hero-text {
+  text-align: start;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+.hero-text ul {
+  list-style: disclosure-closed;
+}
+.hero-image {
+  max-width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+  }
+  .hero-text {
+    max-width: 50%;
+  }
+  .hero-image {
+    max-width: 30%;
+  }
+}
