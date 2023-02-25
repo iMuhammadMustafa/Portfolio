@@ -1,0 +1,123 @@
+.text-center {
+  text-align: center;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.flex-around {
+  justify-content: space-around;
+}
+
+.icon-container {
+  background-color: transparent;
+  border: none;
+  width: 2.5rem;
+  height: 2rem;
+}
+.darkimg-invert {
+  filter: invert(var(--dark-img-invert));
+}
+
+.icon-sm {
+  width: 30px;
+}
+.icon-md {
+  width: 40px;
+}
+
+.bounce-animation {
+  animation: bounceAnimation 1.5s ease-in-out infinite both alternate;
+}
+@keyframes bounceAnimation {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+.pt-5 {
+  padding-top: 5%;
+}
+.pb-20 {
+  padding-bottom: 20%;
+}
+.p-5 {
+  padding: 5%;
+}
+.py-5 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.px-5 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.m-10 {
+  margin: 10%;
+}
+/* .mb-10 {
+    margin-bottom: 10%;
+  } */
+.mx-3 {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.divider {
+  aspect-ratio: 900/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+.gradient-divider {
+  background-image: linear-gradient(to bottom, var(--bg-100), var(--bg-200));
+  /* background-image: url("./Assets/gradient-divider.svg"); */
+}
+
+.highlight-text {
+  position: relative;
+  /* z-index: 1; */
+}
+.highlight-text::after {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  bottom: 10%;
+  left: 5%;
+  width: 105%;
+  height: 0.3em;
+  background: linear-gradient(65deg, var(--primary-100) 0%, var(--primary-200) 100%);
+}
+.highlight-purple::after {
+  background: linear-gradient(65deg, #df058d 0%, #df058d 100%, rgba(255, 209, 0, 0) 100%);
+}
+.highlight-blue::after {
+  background: linear-gradient(65deg, #5c05df 0%, #3d0394 100%, rgba(255, 209, 0, 0) 100%);
+}
+
+.z-1 {
+  position: relative;
+  z-index: 1;
+}

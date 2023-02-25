@@ -1,4 +1,5 @@
 @import url(./Styles/_reset.css);
 @import url(./Styles/_variables.css);
 @import url(./Styles/_defaults.css);
+@import url(./Styles/_globals.css);
 @import url(./Styles/Modules/_navbar.module.css);
