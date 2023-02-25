@@ -1,0 +1,31 @@
+h1.section-header {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-100);
+  margin-bottom: 1.5rem;
+}
+
+section {
+  transition: all 1s;
+}
+
+.hidden-section {
+  opacity: 0;
+  /* transform: translateX(-100%); */
+  filter: blur(2px);
+  transition: all 2s;
+}
+.hidden-part {
+  transition: all 3s;
+}
+.hidden-section .hidden-part {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-100%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hidden-section {
+    transition: none;
+  }
+}
