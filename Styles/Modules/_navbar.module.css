@@ -117,12 +117,12 @@ a::after {
 .navbar a {
   text-decoration: none;
 }
-.navbar a:visited {
-  color: var(--text-100);
-}
+.navbar a:link,
+.navbar a:visited,
 .navbar a:active {
-  color: var(--primary-100);
+  color: inherit;
 }
+
 .toggler-button {
   transition: all 2s ease;
 }
