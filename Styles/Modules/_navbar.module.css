@@ -1,18 +1,18 @@
 .navbar {
-  background-color: var(--bg-200);
-  color: var(--text-100);
+  background-color: var(--navbar-bg);
+  color: var(--navbar-text);
   opacity: 0.85;
   width: 100%;
   padding: 0.5% 5%;
   font-size: 1.2em;
   text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: var(--navbar-z-index);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 .nav-brand img {
@@ -23,12 +23,10 @@
 }
 .nav-brand img:hover {
   transform: scale(1.2);
-  transition: transform 0.3s ease;
 }
 
 .menu-toggler {
-  z-index: 101;
-  order: 101;
+  z-index: calc(var(--navbar-z-index) + 1);
   cursor: pointer;
 }
 .menu-toggler-bar {
@@ -55,8 +53,9 @@
 
 .navbar-nav {
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   height: 90vh;
+  height: 90svh;
   background-color: inherit;
 
   position: absolute;
@@ -68,14 +67,15 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  overflow-x: scroll;
 
   clip-path: circle(5vh at 100% -10%);
+  clip-path: circle(5svh at 100% -10%);
   transition: clip-path 2s ease;
 }
 .navbar-nav.expand {
   clip-path: circle(150% at 90% -20%);
   transition: all 1s ease;
+  overflow-y: scroll;
 }
 
 .navbar-nav .nav-item {
@@ -85,7 +85,6 @@
 }
 .navbar-nav.expand .nav-item {
   opacity: 1;
-  transition: all 1s ease-in;
 }
 .navbar-nav .nav-item .nav-link:hover,
 .nav-items .nav-item a:hover {
@@ -103,7 +102,7 @@ a::after {
   /* transform-origin: bottom left; */
 
   background-color: var(--primary-100);
-  height: 1px;
+  height: 1.5px;
   transition: all 0.5s ease;
 }
 .navbar-nav .nav-item .nav-link:hover::after,
@@ -111,8 +110,6 @@ a::after {
   width: 100%;
   /* transform: scaleX(1); */
   /* transform-origin: bottom right; */
-
-  transition: all 0.5s ease;
 }
 .navbar a {
   text-decoration: none;
@@ -130,8 +127,9 @@ a::after {
 @media screen and (min-width: 768px) {
   .navbar {
     justify-content: flex-start;
+    overflow-x: auto;
   }
-  [data-toggler-target="navbar"] {
+  .menu-toggler {
     display: none;
   }
 
@@ -142,7 +140,6 @@ a::after {
     clip-path: none;
     padding: 0 0.5em;
     overflow: hidden;
-
     flex-direction: row;
     flex: 1 0 auto;
     transition: all 2s ease, background-color 0s, color 0s;

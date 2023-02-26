@@ -97,3 +97,9 @@
     --y: rgba(191, 140, 140, 1);
     --disabled: rgba(63, 63, 63, 1);
   } */
+
+:root {
+  --navbar-z-index: 100;
+  --navbar-bg: var(--bg-200);
+  --navbar-text: var(--text-100);
+}
