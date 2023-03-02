@@ -43,7 +43,7 @@ function DrawStars() {
   //Clear the canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   //   ctx.globalCompositeOperation = "lighter";
-  for (star of stars) {
+  for (let star of stars) {
     //Draw a circle path
     ctx.strokeStyle = starsColor;
     ctx.beginPath();
@@ -118,7 +118,7 @@ function starsDistance(point1, point2) {
 }
 
 function updateStars() {
-  for (star of stars) {
+  for (let star of stars) {
     star.x += star.vx / FPS;
     star.y += star.vy / FPS;
 
