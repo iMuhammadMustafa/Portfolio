@@ -73,7 +73,7 @@
   transition: clip-path 2s ease;
 }
 .navbar-nav.expand {
-  clip-path: circle(150% at 90% -20%);
+  clip-path: circle(200% at 90% -20%);
   transition: all 1s ease;
   overflow-y: scroll;
 }
