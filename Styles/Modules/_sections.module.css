@@ -4,6 +4,7 @@ h1.section-header {
   font-weight: 700;
   color: var(--text-100);
   margin-bottom: 1.5rem;
+  z-index: 1;
 }
 
 section {
@@ -17,7 +18,7 @@ section {
   transition: all 2s;
 }
 .hidden-part {
-  transition: all 3s;
+  transition: all 2s;
 }
 .hidden-section .hidden-part {
   opacity: 0;

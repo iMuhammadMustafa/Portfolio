@@ -9,6 +9,7 @@
 @import url(./Styles/Modules/_starsCanvas.module.css);
 @import url(./Styles/Modules/_expertiese.module.css);
 @import url(./Styles/Modules/_hero.module.css);
+@import url(./Styles/Modules/_contact_module.css);
 
 @media (prefers-reduced-motion) {
   * {
