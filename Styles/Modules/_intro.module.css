@@ -1,6 +1,8 @@
 .intro {
   position: relative;
   height: 90vh;
+  height: 90svh;
+  padding-bottom: 5%;
 }
 .intro-content {
   display: flex;

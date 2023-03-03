@@ -1,36 +1,101 @@
 .hero {
   position: relative;
-  background-image: linear-gradient(to bottom, var(--bg-100), var(--bg-200));
-  height: 100vh;
-  /* padding-top: 5vh; */
-}
-.hero-content {
+  background-image: linear-gradient(to top, var(--bg-100), var(--bg-200));
+  /* height: 100vh; */
+  /* height: 100svh; */
+
   display: flex;
-  height: 100%;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  padding: 5%;
 }
-.hero-text {
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". a ."
+    "d a e"
+    "d b e"
+    "f b g"
+    "f c g"
+    ". c .";
+  /* max-width: 50%; */
+}
+.hero-content {
   text-align: start;
   font-size: 1.2rem;
   margin: 0 1rem;
 }
-.hero-text ul {
-  list-style: disclosure-closed;
-}
-.hero-image {
-  max-width: 50%;
-}
+
 @media screen and (min-width: 768px) {
-  .hero-content {
-    flex-direction: row;
+  .hero {
+    flex-direction: row-reverse;
+    gap: 100px;
   }
-  .hero-text {
+  .hero-content {
     max-width: 50%;
   }
-  .hero-image {
+  .hero-grid {
     max-width: 30%;
   }
+}
+
+.hero-grid div:nth-child(1) {
+  grid-area: a;
+}
+
+.hero-grid div:nth-child(2) {
+  grid-area: b;
+}
+
+.hero-grid div:nth-child(3) {
+  grid-area: c;
+}
+
+.hero-grid div:nth-child(4) {
+  grid-area: d;
+}
+
+.hero-grid div:nth-child(5) {
+  grid-area: e;
+}
+
+.hero-grid div:nth-child(6) {
+  grid-area: f;
+}
+
+.hero-grid div:nth-child(7) {
+  grid-area: g;
+}
+
+.card-hoverable {
+  position: relative;
+  border-radius: 10px;
+}
+.card-content {
+  border-radius: inherit;
+}
+
+.card-hoverable::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  opacity: 0;
+  content: "";
+  transition: opacity 500ms;
+}
+
+.card-hoverable::before {
+  background: radial-gradient(150px circle at var(--mouse-x) var(--mouse-y), rgba(var(--invert-color), 0.3), transparent 70%);
+}
+.hero-grid:hover .card-hoverable::before {
+  opacity: 1;
 }
