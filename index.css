@@ -9,3 +9,9 @@
 @import url(./Styles/Modules/_starsCanvas.module.css);
 @import url(./Styles/Modules/_expertiese.module.css);
 @import url(./Styles/Modules/_hero.module.css);
+
+@media (prefers-reduced-motion) {
+  * {
+    transition: all 0s !important;
+  }
+}
