@@ -1,0 +1,87 @@
+.experience {
+  padding: 2%;
+}
+.companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 0 2%;
+  overflow: hidden;
+}
+.company-name {
+  text-transform: capitalize;
+}
+.company-date,
+.company-position {
+  color: var(--text-200);
+  text-transform: uppercase;
+}
+
+.responsibilities {
+  list-style-type: disc;
+}
+.responsibilities li::marker {
+  color: var(--text-200);
+}
+@media screen and (min-width: 768px) {
+  .companies::before {
+    position: absolute;
+    content: " ";
+    left: 50%;
+    border: 1px solid rgba(var(--invert-color), 0.4);
+    top: 30px;
+    height: calc(99% - 30px);
+  }
+  .company {
+    width: 50%;
+    padding: 1% 2%;
+  }
+  .company-date {
+    position: absolute;
+  }
+  .company-details * {
+    transition: transform 2s;
+  }
+  .company:nth-child(odd) {
+    align-self: flex-end;
+  }
+  .company:nth-child(odd) .company-date {
+    right: 50%;
+    transform: translate(-10%, 10%);
+  }
+  .company:nth-child(odd).hidden-part .company-details > :not(.company-date) {
+    transform: translateX(110%);
+  }
+  .company:nth-child(even) {
+    align-self: flex-start;
+  }
+  .company:nth-child(even) .company-date {
+    left: 50%;
+    transform: translate(10%, 10%);
+  }
+  .company:nth-child(even).hidden-part .company-details > :not(.company-date) {
+    transform: translateX(-110%);
+  }
+  .company::before {
+    content: " ";
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgb(var(--invert-color));
+    background-color: var(--bg-100);
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    transform: translate(-45%, 50%);
+  }
+  .companies:hover .company {
+    background: radial-gradient(350px at var(--mouse-x) var(--mouse-y), rgba(var(--invert-color), 0.1), transparent 70%);
+  }
+  .company:hover::before {
+    background-color: rgb(var(--invert-color));
+  }
+  .companies:has(.company:hover)::before {
+    border: 1px solid rgba(var(--invert-color), 1);
+  }
+}
