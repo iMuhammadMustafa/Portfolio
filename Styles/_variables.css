@@ -99,6 +99,7 @@
   } */
 
 :root {
+  --base-z-index: 0;
   --navbar-z-index: 100;
   --navbar-bg: var(--bg-200);
   --navbar-text: var(--text-100);

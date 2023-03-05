@@ -11,6 +11,8 @@
 @import url(./Styles/Modules/_hero.module.css);
 @import url(./Styles/Modules/_contact_module.css);
 @import url(./Styles/Modules/_experience.module.css);
+@import url(./Styles/Modules/_projects.module.css);
+@import url(./Styles/Modules/_card_module.css);
 
 @media (prefers-reduced-motion) {
   * {

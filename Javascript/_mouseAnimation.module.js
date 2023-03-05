@@ -30,3 +30,14 @@ document.querySelector(".companies").onmousemove = e => {
     container.style.setProperty("--mouse-y", y + "px");
   }
 };
+
+document.querySelector(".hoverable-cards-container").onmousemove = e => {
+  for (const container of document.querySelectorAll(".hoverable-card")) {
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    container.style.setProperty("--mouse-x", x + "px");
+    container.style.setProperty("--mouse-y", y + "px");
+  }
+};
