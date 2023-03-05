@@ -17,6 +17,7 @@
 .intro-footer {
   position: absolute;
   bottom: 0;
+  left: 50%;
 }
 .intro h1 {
   font-size: 3rem;

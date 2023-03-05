@@ -83,6 +83,7 @@ ul,
 ol {
   list-style: none;
   padding: 0;
+  list-style-position: inside;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */

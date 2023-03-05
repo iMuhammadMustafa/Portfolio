@@ -5,6 +5,7 @@
 
 .contact-form {
   /* border: 1px solid var(--text-200); */
+  box-shadow: 0.5rem 0.5rem 2rem 0 var(--bg-600);
   border-radius: 10px;
   padding: 1%;
   width: 50%;
