@@ -1,0 +1,36 @@
+.projects {
+  background-color: var(--bg-200);
+  padding: 50px 0;
+}
+.project {
+  flex: 1 1 auto;
+}
+.project-content {
+  background-color: var(--bg-200);
+}
+.project-details {
+  padding: 15px;
+}
+.project-description {
+  color: var(--text-200);
+  max-width: 100%;
+  overflow: hidden;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; */
+}
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-links a {
+  color: var(--primary-100);
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .project {
+    flex: 0 0 30%;
+    max-width: 34%;
+  }
+}
