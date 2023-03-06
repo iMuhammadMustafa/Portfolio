@@ -8,7 +8,8 @@ h1.section-header {
 }
 
 section {
-  transition: all 1s;
+  transition: all 2s;
+  position: relative;
 }
 
 .hidden-section {

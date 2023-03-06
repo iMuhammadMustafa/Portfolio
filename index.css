@@ -13,9 +13,15 @@
 @import url(./Styles/Modules/_experience.module.css);
 @import url(./Styles/Modules/_projects.module.css);
 @import url(./Styles/Modules/_card_module.css);
+@import url(./Styles/Modules/_waves.module.css);
+@import url(./Styles/Modules/_testimonials.module.css);
+@import url(./Styles/Modules/_footer.module.css);
 
 @media (prefers-reduced-motion) {
   * {
     transition: all 0s !important;
   }
+}
+html {
+  text-rendering: optimizeLegibility;
 }

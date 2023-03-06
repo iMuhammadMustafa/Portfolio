@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   /* align-items: center; */
-  padding: 0 2rem;
+  padding: 8px 2rem;
   gap: 8px;
 }
 .hoverable-card {
@@ -31,8 +31,13 @@
   width: 99.6%;
   height: 99.7%;
 }
+.project-image {
+  border-radius: inherit;
+}
 .hoverable-card img {
-  border-radius: 10px;
+  border-radius: inherit;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .hoverable-card::before,

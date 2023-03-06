@@ -1,0 +1,22 @@
+.wave-seperator {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.seperator-bottom {
+  transform: rotate(180deg);
+}
+
+.wave-seperator svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 167px;
+}
+
+.wave-seperator .shape-fill {
+  fill: var(--bg-100);
+}
