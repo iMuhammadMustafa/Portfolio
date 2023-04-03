@@ -26,10 +26,14 @@
     ". c .";
   /* max-width: 50%; */
 }
+
 .hero-content {
   text-align: start;
   font-size: 1.2rem;
   margin: 0 1rem;
+}
+.hero-grid img {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {

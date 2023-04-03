@@ -1,6 +1,11 @@
+/* .testimonials h3 {
+  background-color: var(--bg-200);
+  text-align: center;
+  padding: 10px 0;
+} */
 .testimonials-container {
   background-color: var(--bg-200);
-  padding: 100px 0;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -13,6 +18,7 @@
   width: max-content;
   transform: translate3d(0, 0, 0);
   will-change: transform;
+  animation-play-state: running;
 }
 .testimonial {
   display: flex;
@@ -22,13 +28,32 @@
   padding: 10px;
   background-color: var(--bg-100);
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(var(--invert-color), 0.3);
+  /* box-shadow: 0px 0px 10px 0px rgba(var(--invert-color), 0.75); */
+  box-shadow: 0px 1px 10p rgba(var(--invert-color), 0.1);
+  opacity: 0.9;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+
+  /* background: rgba(255, 255, 255, 0.07); */
+}
+/* .testimonial-image {
+  align-self: flex-end;
+} */
+.testimonial-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonial-title {
+  color: var(--text-200);
 }
 .testimonials-container li:nth-child(odd) {
-  animation: animateCards1 25s ease-in-out infinite alternate;
+  /* animation: animateCards1 25s ease-in-out infinite alternate; */
 }
 .testimonials-container li:nth-child(even) {
-  animation: animateCards2 25s ease-in-out infinite alternate;
+  /* animation: animateCards2 25s ease-in-out infinite alternate; */
 }
 .testimonials-container li:hover {
   animation-play-state: paused;

@@ -5,9 +5,10 @@ const sectionObserver = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.remove("hidden-section");
-      } else {
-        entry.target.classList.add("hidden-section");
       }
+      // else {
+      //   entry.target.classList.add("hidden-section");
+      // }
     });
   },
   { threshold: [0.3] }
@@ -17,9 +18,10 @@ partsObserver = new IntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.remove("hidden-part");
-      } else {
-        entry.target.classList.add("hidden-part");
       }
+      // else {
+      //   entry.target.classList.add("hidden-part");
+      // }
     });
   },
   { threshold: [0.3] }
