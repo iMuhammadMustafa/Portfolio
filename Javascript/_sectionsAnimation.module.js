@@ -13,7 +13,7 @@ const sectionObserver = new IntersectionObserver(
   },
   { threshold: [0.3] }
 );
-partsObserver = new IntersectionObserver(
+const partsObserver = new IntersectionObserver(
   (entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
