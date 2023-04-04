@@ -130,3 +130,7 @@
   position: relative;
   z-index: 1;
 }
+
+.d-hidden {
+  display: none;
+}

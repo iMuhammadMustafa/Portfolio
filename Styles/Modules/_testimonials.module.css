@@ -50,10 +50,10 @@
   color: var(--text-200);
 }
 .testimonials-container li:nth-child(odd) {
-  /* animation: animateCards1 25s ease-in-out infinite alternate; */
+  animation: animateCards1 25s ease-in-out infinite alternate;
 }
 .testimonials-container li:nth-child(even) {
-  /* animation: animateCards2 25s ease-in-out infinite alternate; */
+  animation: animateCards2 25s ease-in-out infinite alternate;
 }
 .testimonials-container li:hover {
   animation-play-state: paused;

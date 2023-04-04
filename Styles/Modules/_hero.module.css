@@ -103,3 +103,27 @@
 .hero-grid:hover .card-hoverable::before {
   opacity: 1;
 }
+
+.tagcloud {
+  font-size: 16px;
+}
+
+.tagcloud--item {
+  padding: 2px 4px;
+  background-color: transparent;
+}
+
+.tagcloud--item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 1 !important;
+  z-index: 100 !important;
+}
+
+.light .tagcloud--item {
+  color: #fff;
+}
+
+.light .tagcloud--item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+}
