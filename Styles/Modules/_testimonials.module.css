@@ -1,8 +1,7 @@
-/* .testimonials h3 {
-  background-color: var(--bg-200);
-  text-align: center;
-  padding: 10px 0;
-} */
+.testimonials {
+  margin-top: 10px;
+  /* background-color: var(--bg-200); */
+}
 .testimonials-container {
   background-color: var(--bg-200);
   padding: 50px 0;
@@ -15,7 +14,11 @@
 .testimonials-container li {
   display: flex;
   gap: 10px;
-  width: max-content;
+
+  width: 100%;
+  flex-wrap: nowrap;
+  /* overflow: hidden; */
+
   transform: translate3d(0, 0, 0);
   will-change: transform;
   animation-play-state: running;
@@ -35,8 +38,11 @@
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 
+  flex: 0 0 25%; /* Each div occupies 25% of the container width */
+  max-width: 25%;
   /* background: rgba(255, 255, 255, 0.07); */
 }
+
 /* .testimonial-image {
   align-self: flex-end;
 } */
@@ -50,10 +56,10 @@
   color: var(--text-200);
 }
 .testimonials-container li:nth-child(odd) {
-  animation: animateCards1 25s ease-in-out infinite alternate;
+  animation: animateCards1 15s ease-in-out infinite alternate;
 }
 .testimonials-container li:nth-child(even) {
-  animation: animateCards2 25s ease-in-out infinite alternate;
+  animation: animateCards2 15s ease-in-out infinite alternate;
 }
 .testimonials-container li:hover {
   animation-play-state: paused;
@@ -64,12 +70,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-25%);
   }
 }
 @keyframes animateCards2 {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(-25%);
   }
   100% {
     transform: translateX(0);

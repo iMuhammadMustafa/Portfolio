@@ -134,3 +134,7 @@
 .d-hidden {
   display: none;
 }
+
+.bg-200 {
+  background-color: var(--bg-200);
+}

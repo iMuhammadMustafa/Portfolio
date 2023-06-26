@@ -2,6 +2,8 @@
   padding: 2% 0%;
   /* background-color: var(--bg-200); */
   /* background-image: linear-gradient(to bottom, var(--bg-100) 1%, var(--bg-200) 15%); */
+  min-height: 100vh;
+  min-height: 100svh;
   position: relative;
 }
 
