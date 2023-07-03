@@ -33,14 +33,23 @@
   border-radius: 10px;
   border: 1px solid rgba(var(--invert-color), 0.3);
   /* box-shadow: 0px 0px 10px 0px rgba(var(--invert-color), 0.75); */
+  /* background: rgba(255, 255, 255, 0.07); */
   box-shadow: 0px 1px 10p rgba(var(--invert-color), 0.1);
   opacity: 0.9;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 
-  flex: 0 0 25%; /* Each div occupies 25% of the container width */
-  max-width: 25%;
-  /* background: rgba(255, 255, 255, 0.07); */
+  flex: 0 0 100%;
+  max-width: 98%;
+  margin: 0 1%;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial {
+    flex: 0 0 25%; /* Each div occupies 25% of the container width */
+    max-width: 25%;
+    margin: 0;
+  }
 }
 
 /* .testimonial-image {
@@ -56,10 +65,10 @@
   color: var(--text-200);
 }
 .testimonials-container li:nth-child(odd) {
-  animation: animateCards1 15s ease-in-out infinite alternate;
+  animation: animateCards1 40s linear infinite alternate;
 }
 .testimonials-container li:nth-child(even) {
-  animation: animateCards2 15s ease-in-out infinite alternate;
+  animation: animateCards2 40s linear infinite alternate;
 }
 .testimonials-container li:hover {
   animation-play-state: paused;
@@ -70,14 +79,57 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-25%);
+    transform: translateX(-400%);
   }
 }
 @keyframes animateCards2 {
   0% {
-    transform: translateX(-25%);
+    transform: translateX(-400%);
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials-container li:nth-child(odd) {
+    animation: animateCards1 10s linear infinite alternate;
+  }
+  .testimonials-container li:nth-child(even) {
+    animation: animateCards2 10s linear infinite alternate;
+  }
+
+  @keyframes animateCards1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+  @keyframes animateCards2 {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes animateCards1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+  @keyframes animateCards2 {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }

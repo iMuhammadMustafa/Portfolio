@@ -9,7 +9,7 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  padding: 5%;
+  padding: 5% 0;
 }
 .hero-grid {
   display: grid;
@@ -36,7 +36,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .hero {
     flex-direction: row-reverse;
     gap: 100px;
@@ -47,6 +47,10 @@
   .hero-grid {
     max-width: 30%;
   }
+}
+.cloud-sphere {
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .hero-grid div:nth-child(1) {
@@ -98,7 +102,11 @@
 }
 
 .card-hoverable::before {
-  background: radial-gradient(150px circle at var(--mouse-x) var(--mouse-y), rgba(var(--invert-color), 0.3), transparent 70%);
+  background: radial-gradient(
+    150px circle at var(--mouse-x) var(--mouse-y),
+    rgba(var(--invert-color), 0.3),
+    transparent 70%
+  );
 }
 .hero-grid:hover .card-hoverable::before {
   opacity: 1;
