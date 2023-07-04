@@ -98,6 +98,9 @@
   .testimonials-container li:nth-child(even) {
     animation: animateCards2 10s linear infinite alternate;
   }
+  .testimonials-container li:hover {
+    animation-play-state: paused;
+  }
 
   @keyframes animateCards1 {
     0% {
