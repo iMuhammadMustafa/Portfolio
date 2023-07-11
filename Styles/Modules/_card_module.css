@@ -55,7 +55,7 @@
 
 .hoverable-card::before {
   background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(var(--invert-color), 0.06), transparent 40%);
-  z-index: calc(var(--base-z-index) + 3);
+  /* z-index: calc(var(--base-z-index) + 3); */
 }
 
 .hoverable-card::after {
