@@ -7,6 +7,7 @@
   padding-top: 10%;
   /* padding-bottom: 10%; */
 }
+
 .expertise::before {
   content: " ";
   position: absolute;
@@ -15,8 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, var(--bg-100) 0%, var(--bg-200) 100%);
-
+  background-color: var(--bg-200);
   opacity: 0.5;
 }
 
@@ -68,17 +68,36 @@
   border-radius: inherit;
   opacity: 0;
   content: "";
-  transition: opacity 500ms;
+  /* transition: opacity 500ms; */
 }
 .skill-content::after {
-  background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y), rgba(var(--invert-color), 0.1), transparent 40%);
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(var(--invert-color), 0.1),
+    transparent 40%
+  );
 }
 
 .skill-content::before {
   /* clip-path: polygon(0% 0%, 0% 100%, 0.1% 100%, 0.1% 0.1%, 99.9% 0.1%, 99.9% 99.7%, 0% 99.7%, 0% 100%, 100% 100%, 100% 0%); */
-  clip-path: polygon(0% 0%, 0% 100%, 0.1% 100%, 0.1% 0.1%, 99.9% 0.1%, 99.9% 99.9%, 0% 99.9%, 0% 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    0.1% 100%,
+    0.1% 0.1%,
+    99.9% 0.1%,
+    99.9% 99.9%,
+    0% 99.9%,
+    0% 100%,
+    100% 100%,
+    100% 0%
+  );
   background-color: var(--text-200);
-  background: radial-gradient(200px circle at var(--mouse-x) var(--mouse-y), rgba(var(--invert-color), 1), transparent 40%);
+  background: radial-gradient(
+    200px circle at var(--mouse-x) var(--mouse-y),
+    rgba(var(--invert-color), 1),
+    transparent 40%
+  );
 
   /* inset: 1px; */
 }
