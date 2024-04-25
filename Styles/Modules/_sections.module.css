@@ -8,7 +8,7 @@ h1.section-header {
 }
 
 section {
-  transition: all 2s;
+  transition: all 2s ease-in-out;
   position: relative;
 }
 
@@ -16,15 +16,15 @@ section {
   opacity: 0;
   /* transform: translateX(-100%); */
   filter: blur(2px);
-  transition: all 2s;
+  transition: all 2s ease-in-out;
 }
 .hidden-part {
-  transition: all 2s;
+  transition: all 2s ease-in-out;
 }
 .hidden-section .hidden-part {
   opacity: 0;
   filter: blur(3px);
-  transform: translateX(-100%);
+  transform: translateX(-100%) ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .hidden-section {
