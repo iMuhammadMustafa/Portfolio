@@ -17,13 +17,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .project-image {
   border-radius: inherit;
   flex: 2;
   min-height: 26rem;
-  max-height: 100%;
+  /* min-height: 70%; */
+  max-height: 60%;
   width: 100%;
 }
 .project-image img {
