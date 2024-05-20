@@ -21,6 +21,12 @@
 
 .responsibilities {
   list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 30px;
+}
+.responsibilities li {
+  text-align: justify;
+  text-indent: -25px;
 }
 .responsibilities li::marker {
   color: var(--text-200);
@@ -76,7 +82,11 @@
     transform: translate(-45%, 50%);
   }
   .companies:hover .company {
-    background: radial-gradient(350px at var(--mouse-x) var(--mouse-y), rgba(var(--invert-color), 0.1), transparent 70%);
+    background: radial-gradient(
+      350px at var(--mouse-x) var(--mouse-y),
+      rgba(var(--invert-color), 0.1),
+      transparent 70%
+    );
   }
   .company:hover::before {
     background-color: rgb(var(--invert-color));
@@ -89,7 +99,7 @@
 .pills-container {
   display: flex;
   gap: 10px;
-  margin: 5px 0px;
+  margin: 10px 0px;
   flex-wrap: wrap;
 }
 .pill {

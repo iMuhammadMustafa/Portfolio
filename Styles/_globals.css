@@ -32,6 +32,9 @@
 .darkimg-invert {
   filter: invert(var(--dark-img-invert));
 }
+.lightimg-invert {
+  filter: invert(var(--light-img-invert));
+}
 
 .icon-sm {
   width: 30px;
