@@ -5,7 +5,7 @@
   width: 100%;
   padding: 0.5% 5%;
   font-size: 1.2em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   position: sticky;
   top: 0;
   z-index: var(--navbar-z-index);
